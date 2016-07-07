@@ -35,39 +35,23 @@
 
         <activity
             android:name=".MapsActivity"
-<<<<<<< HEAD
-            android:label="@string/title_activity_maps"></activity>
+            android:label="@string/title_activity_maps">
+        </activity>
 
         <activity
             android:name=".Register"
             android:label="@string/title_activity_register"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
 
         <activity
             android:name=".Login"
             android:label="@string/title_activity_login">
-=======
-<<<<<<< HEAD
             android:label="@string/title_activity_maps"></activity>
-        <activity
-            android:name=".Register"
-            android:label="@string/title_activity_register"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Login"
-            android:label="@string/title_activity_login"
-=======
-            android:label="@string/title_activity_maps">
->>>>>>> 85baa81740bde0bb6d503f1cc7b889a4e7688903
-        </activity>
 
         <activity
             android:name=".SplashActivity"
             android:label="@string/splashTitle"
-<<<<<<< HEAD
-=======
->>>>>>> master
->>>>>>> 85baa81740bde0bb6d503f1cc7b889a4e7688903
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -75,14 +59,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
 
-=======
->>>>>>> 85baa81740bde0bb6d503f1cc7b889a4e7688903
         <activity
             android:name=".Listings"
             android:label="@string/title_activity_listings"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>
