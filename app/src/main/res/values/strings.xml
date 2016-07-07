@@ -1,11 +1,23 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">Stooper</string>
+=======
+    <string name="app_name">Stooper App</string>
+<<<<<<< HEAD
+>>>>>>> 85baa81740bde0bb6d503f1cc7b889a4e7688903
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_login">Login</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_register">Register</string>
     <string name="title_activity_listings">Listings</string>
+<<<<<<< HEAD
     <string name="title_activity_splash">SplashActivity</string>
+=======
+=======
+    <string name="title_activity_maps">maps</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="action_settings">Settings</string>
+>>>>>>> 85baa81740bde0bb6d503f1cc7b889a4e7688903
     <string name="splashTitle">Stooper</string>
     <string name="map_not_ready">Map Not Ready</string>
     <string name="zoom_buttons">Zoom Buttons</string>
