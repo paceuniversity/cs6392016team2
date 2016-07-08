@@ -1,5 +1,6 @@
 <resources>
 
+    <!-- Main App and Map Text -->
     <string name="app_name">Stooper</string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_login">Login</string>
@@ -19,7 +20,6 @@
     <string name="scroll">Scroll Gestures</string>
     <string name="rotate">Rotate Gestures</string>
 
-
     <!--    Permissions    -->
     <string name="permission_rationale_location">Access to the location service is required to demonstrate the \'my location\' feature, which shows your current location on the map.</string>
     <string name="location_permission_denied">This sample requires location permission to enable the \'my location\' layer. Please try again and grant access to use the location.\nIf the permission has been permanently denied, it can be enabled from the System Settings &gt; Apps &gt; \'Google Maps API Demos\'.</string>
@@ -35,12 +35,12 @@
     <string name="nav_drawer_list">Item List</string>
     <string name="nav_drawer_header">Stooper Navigation</string>
     <string name="nav_drawer_tag">Find Free Stuff!</string>
+    <string name="nav_drawer_create_listing">Create Listing</string>
+    <string name="nav_drawer_request_listing">Request Listing</string>
+    <string name="nav_drawer_contact_us">Contact Us</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_gmaps_fragment">GmapsFragment</string>
-    <string name="title_activity_map">Map</string>
-    <string name="title_activity_inner_navi">Stooper</string>
+    <!--Create Listing text -->
+    <string name="create_listing_title">What are you looking for?</string>
 
     <string-array name="Categories">
         <item>Sporting Goods</item>
@@ -49,11 +49,18 @@
         <item>Shoes</item>
         <item>Collectibles</item>
     </string-array>
+
     <string-array name="Conditions">
         <item>Perfect</item>
         <item>Usable</item>
         <item>Needs repair</item>
         <item>Scrap</item>
     </string-array>
+
+    <!-- Init text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_gmaps_fragment">GmapsFragment</string>
+    <string name="title_activity_map">Map</string>
+    <string name="title_activity_inner_navi">Stooper</string>
 
 </resources>

@@ -2,7 +2,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.cs6392016.gbergy.stooperapp.ContactUsFrag">
+    tools:context="com.cs6392016.gbergy.stooperapp.ContactUsFrag"
+    android:gravity="center"
+    android:background="#ffffff">
 
 
     <ImageButton
@@ -38,7 +40,8 @@
         android:layout_alignBottom="@+id/gregbtn"
         android:layout_toEndOf="@+id/gregbtn"
         android:layout_alignParentTop="true"
-        android:gravity="center_vertical" />
+        android:gravity="center_vertical"
+        android:textColor="@color/splashBackground"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -49,7 +52,8 @@
         android:layout_above="@+id/jonesbtn"
         android:layout_toEndOf="@+id/tonybtn"
         android:layout_alignTop="@+id/tonybtn"
-        android:gravity="center_vertical" />
+        android:gravity="center_vertical"
+        android:textColor="@color/splashBackground"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -60,5 +64,6 @@
         android:layout_alignBottom="@+id/jonesbtn"
         android:layout_toEndOf="@+id/jonesbtn"
         android:layout_below="@+id/tonybtn"
-        android:gravity="center_vertical" />
+        android:gravity="center_vertical"
+        android:textColor="@color/splashBackground"/>
 </RelativeLayout>

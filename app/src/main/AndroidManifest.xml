@@ -36,19 +36,26 @@
         <activity
             android:name=".DrawerActivity"
             android:label="@string/title_activity_drawer"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps" />
+            android:label="@string/title_activity_maps">
+        </activity>
+
         <activity
             android:name=".Register"
             android:label="@string/title_activity_register"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
         <activity
             android:name=".Login"
             android:label="@string/title_activity_login">
             android:label="@string/title_activity_maps">
         </activity>
+
         <activity
             android:name=".SplashActivity"
             android:label="@string/splashTitle"
@@ -59,18 +66,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".Listings"
             android:label="@string/title_activity_listings"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
         <activity
             android:name=".GMap"
             android:label="@string/title_activity_map"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
         <activity
             android:name=".InnerNavi"
             android:label="@string/title_activity_inner_navi"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>

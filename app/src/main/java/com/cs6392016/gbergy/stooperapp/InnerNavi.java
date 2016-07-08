@@ -83,9 +83,6 @@ public class InnerNavi extends AppCompatActivity
             FragmentManager manager = getSupportFragmentManager();
             manager.beginTransaction().replace(R.id.defaultinnerfrag, findlisting, findlisting.getTag()).commit();
 
-        } else if (id == R.id.nav_share) {
-
-
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
