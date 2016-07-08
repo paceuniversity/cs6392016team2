@@ -141,7 +141,7 @@ public class DrawerActivity extends AppCompatActivity
         } else if (id == R.id.nav_create_request) {
             //fm.beginTransaction().replace(R.id.fragment_container, new CreateRequest()).commit();
         } else if (id == R.id.nav_contact_us) {
-            ContactUsFrag fragment = new ContactUsFrag();
+            ContactUs fragment = new ContactUs();
             android.support.v4.app.FragmentTransaction fragmentTransaction =
                     getSupportFragmentManager().beginTransaction();
             fragmentTransaction.replace(R.id.fragment_container, fragment);
