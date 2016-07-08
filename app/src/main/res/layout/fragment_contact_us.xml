@@ -2,15 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.cs6392016.gbergy.stooperapp.ContactUsFrag">
+    tools:context="com.cs6392016.gbergy.stooperapp.ContactUs">
 
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/gregbtn"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
+        android:layout_gravity="left|top"
         android:src="@drawable/ic_greg" />
 
     <ImageButton
@@ -47,9 +46,10 @@
         android:text="Tony Chen"
         android:id="@+id/textView11"
         android:layout_above="@+id/jonesbtn"
-        android:layout_toEndOf="@+id/tonybtn"
         android:layout_alignTop="@+id/tonybtn"
-        android:gravity="center_vertical" />
+        android:layout_alignEnd="@+id/textView10"
+        android:gravity="center_vertical"
+        android:layout_toEndOf="@+id/tonybtn" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -58,7 +58,8 @@
         android:text="Rawle Jones"
         android:id="@+id/textView12"
         android:layout_alignBottom="@+id/jonesbtn"
-        android:layout_toEndOf="@+id/jonesbtn"
         android:layout_below="@+id/tonybtn"
+        android:layout_alignEnd="@+id/textView11"
+        android:layout_toEndOf="@+id/tonybtn"
         android:gravity="center_vertical" />
 </RelativeLayout>

@@ -83,8 +83,10 @@ public class InnerNavi extends AppCompatActivity
             FragmentManager manager = getSupportFragmentManager();
             manager.beginTransaction().replace(R.id.defaultinnerfrag, findlisting, findlisting.getTag()).commit();
 
-        } else if (id == R.id.nav_share) {
-
+        } else if (id == R.id.contact) {
+            ContactUs contactUs = new ContactUs();
+            FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction().replace(R.id.defaultinnerfrag, contactUs, contactUs.getTag()).commit();
 
         }
 
