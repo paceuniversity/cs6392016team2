@@ -23,7 +23,7 @@ public class SplashActivity extends Activity {
 
             @Override
             public void run() {
-                Intent mapIntent = new Intent(SplashActivity.this, MapsActivity.class);
+                Intent mapIntent = new Intent(SplashActivity.this, DrawerActivity.class);
 
                 SplashActivity.this.startActivity(mapIntent);
 
