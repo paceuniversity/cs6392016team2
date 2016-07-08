@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.cs6392016.gbergy.stooperapp.Findlisting"
-    android:gravity="center">
+    android:gravity="center"
+    android:background="@color/splashBackground">
 
 
     <TextView
@@ -22,9 +23,13 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:id="@+id/spinner3"
+        android:gravity="center"
+        android:backgroundTint="@color/abc_background_cache_hint_selector_material_light"
+        android:touchscreenBlocksFocus="false"
+        android:background="#ffffff"
         android:layout_below="@+id/textView9"
-        android:layout_alignParentEnd="true"
-        android:backgroundTint="@color/abc_background_cache_hint_selector_material_light" />
+        android:layout_alignStart="@+id/textView9"
+        android:layout_alignEnd="@+id/textView9" />
 
     <Button
         android:layout_width="wrap_content"
