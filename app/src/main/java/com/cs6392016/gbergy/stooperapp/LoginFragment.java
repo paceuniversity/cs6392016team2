@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -56,7 +57,7 @@ public class LoginFragment extends Fragment {
                             boolean success = jsonResponse.getBoolean("success");
 
                             if(success){
-                                startActivity(new Intent(getActivity(), Listings.class));
+                                startActivity(new Intent(getActivity(), InnerNavi.class));
 
                             }else{
                                 AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
