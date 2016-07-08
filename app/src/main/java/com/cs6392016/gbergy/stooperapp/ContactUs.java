@@ -2,13 +2,21 @@ package com.cs6392016.gbergy.stooperapp;
 
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
+import android.widget.Button;
+import android.widget.ImageView;
+
+import java.io.InputStream;
+import java.net.URL;
 
 
 /**
@@ -29,7 +37,7 @@ public class ContactUs extends Fragment {
         // Inflate the layout for this fragment
         final View v = inflater.inflate(R.layout.fragment_contact_us, container, false);
 
-        final ImageButton greg = (ImageButton)v.findViewById(R.id.gregbtn);
+        final Button greg = (Button)v.findViewById(R.id.gregbtn);
         greg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,7 +46,7 @@ public class ContactUs extends Fragment {
                 startActivity(intent);
             }
         });
-        final ImageButton tony = (ImageButton)v.findViewById(R.id.tonybtn);
+        final Button tony = (Button)v.findViewById(R.id.tonybtn);
         tony.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,7 +55,7 @@ public class ContactUs extends Fragment {
                 startActivity(intent);
             }
         });
-        final ImageButton jones = (ImageButton)v.findViewById(R.id.jonesbtn);
+        final Button jones = (Button)v.findViewById(R.id.jonesbtn);
         jones.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,8 +65,58 @@ public class ContactUs extends Fragment {
             }
         });
 
+        Button gregpic = (Button)v.findViewById(R.id.gregpic);
+        gregpic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "https://avatars1.githubusercontent.com/u/793562?v=3&s=400";
+                new MyAsyncTask().execute(url);
+            }
+        });
+
+        Button tonypic = (Button)v.findViewById(R.id.tonypic);
+        tonypic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "https://avatars2.githubusercontent.com/u/19677158?v=3&s=400";
+                new MyAsyncTask().execute(url);
+            }
+        });
+
+        Button jonespic = (Button)v.findViewById(R.id.jonespic);
+        jonespic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "https://avatars1.githubusercontent.com/u/19679737?v=3&s=400";
+                new MyAsyncTask().execute(url);
+            }
+        });
+
 
         return v;
+
     }
+    public class MyAsyncTask extends AsyncTask<String, Void, Bitmap> {
+        @Override
+        protected Bitmap doInBackground(String... params) {
+            Bitmap bmap = null;
+            try {
+                bmap = BitmapFactory.decodeStream((InputStream) new URL(params[0]).getContent());
+            } catch (Exception e) {
+                Log.e("error", e.getMessage());
+            }
+            return bmap;
+        }
+
+        @Override
+        protected void onPostExecute(Bitmap bitmap) {
+            ImageView image = (ImageView) getActivity().findViewById(R.id.gregview);
+
+            if (image != null) {
+                image.setImageBitmap(bitmap);
+            }
+        }
+    }
+
 
 }
