@@ -55,7 +55,7 @@ public class RegisterFragment extends Fragment {
                             boolean success = jsonResponse.getBoolean("success");
 
                             if (success) {
-                                startActivity(new Intent(getActivity(), Login.class));
+                                startActivity(new Intent(getActivity(), DrawerActivity.class));
                             } else {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
                                 builder.setMessage("Account with that username already exist. Please try again.")
