@@ -6,7 +6,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
@@ -29,7 +28,7 @@ public class Findlisting extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        final View v = inflater.inflate(R.layout.fragment_findlisting, container, false);
+        final View v = inflater.inflate(R.layout.fragment_request_listing, container, false);
 
         spinner3 = (Spinner)v.findViewById(R.id.spinner3);
         adapter3 = ArrayAdapter.createFromResource(getActivity(), R.array.Categories, android.R.layout.simple_spinner_item);

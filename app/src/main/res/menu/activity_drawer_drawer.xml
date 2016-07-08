@@ -18,18 +18,22 @@
             android:id="@+id/nav_listings"
             android:icon="@drawable/list"
             android:title="@string/nav_drawer_list" />
+        <item
+            android:id="@+id/nav_create_listing"
+            android:icon="@drawable/create_listing"
+            android:title="@string/nav_drawer_create_listing" />
+        <item
+            android:id="@+id/nav_create_request"
+            android:icon="@drawable/request_listing"
+            android:title="@string/nav_drawer_request_listing" />
     </group>
 
     <item android:title="Communicate">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:id="@+id/nav_contact_us"
+                android:icon="@drawable/contact"
+                android:title="@string/nav_drawer_contact_us" />
         </menu>
     </item>
 

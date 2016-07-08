@@ -87,7 +87,6 @@ public class InnerNavi extends AppCompatActivity
             ContactUs contactUs = new ContactUs();
             FragmentManager manager = getSupportFragmentManager();
             manager.beginTransaction().replace(R.id.defaultinnerfrag, contactUs, contactUs.getTag()).commit();
-
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

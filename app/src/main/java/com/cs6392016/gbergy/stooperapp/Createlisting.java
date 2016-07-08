@@ -8,12 +8,8 @@ import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Spinner;
-import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -38,7 +34,7 @@ public class Createlisting extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        final View v =  inflater.inflate(R.layout.fragment_createlisting, container, false);
+        final View v =  inflater.inflate(R.layout.fragment_create_listing, container, false);
 
 
         final EditText ettitle = (EditText) v.findViewById(R.id.edtitle);
