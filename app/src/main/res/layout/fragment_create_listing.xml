@@ -126,7 +126,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Submit"
+        android:text="Create Listing"
         android:id="@+id/subbtn"
         android:textColor="@color/accent_material_light"
         android:layout_below="@+id/edcity"
